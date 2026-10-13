@@ -1,0 +1,2 @@
+-keep class ru.vorontsov.coach.data.** { *; }
+-keepattributes *Annotation*

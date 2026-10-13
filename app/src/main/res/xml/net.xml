@@ -1,0 +1,5 @@
+<network-security-config>
+  <base-config><trust-anchors><certificates src="system"/></trust-anchors></base-config>
+  <domain-config><domain includeSubdomains="true">sberbank.ru</domain>
+    <trust-anchors><certificates src="system"/><certificates src="@raw/ru_root"/><certificates src="@raw/ru_sub"/></trust-anchors></domain-config>
+</network-security-config>
