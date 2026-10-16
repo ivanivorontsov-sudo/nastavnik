@@ -9,7 +9,7 @@ android {
     namespace = "ru.vorontsov.coach"
     compileSdk = 35
     buildToolsVersion = "35.0.0"
-    defaultConfig { applicationId = "ru.vorontsov.coach"; minSdk = 26; targetSdk = 35; versionCode = 2; versionName = "1.1" }
+    defaultConfig { applicationId = "ru.vorontsov.coach"; minSdk = 26; targetSdk = 35; versionCode = 3; versionName = "1.2" }
     signingConfigs { create("rel") { storeFile = file("../release.keystore"); storePassword = (project.findProperty("NASTAVNIK_STORE_PASSWORD") as String?) ?: System.getenv("NASTAVNIK_STORE_PASSWORD") ?: ""; keyAlias = "nastavnik"; keyPassword = (project.findProperty("NASTAVNIK_KEY_PASSWORD") as String?) ?: System.getenv("NASTAVNIK_KEY_PASSWORD") ?: "" } }
     buildTypes { release { isMinifyEnabled = true; isShrinkResources = true; signingConfig = signingConfigs.getByName("rel")
         proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro") } }

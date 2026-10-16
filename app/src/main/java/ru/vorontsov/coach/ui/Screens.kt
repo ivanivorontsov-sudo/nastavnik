@@ -328,6 +328,9 @@ private val GROW = listOf(
             Slider(thr, { thr = it }, valueRange = 0.6f..0.95f, onValueChangeFinished = { s.threshold = thr }) }
         item { Text("Ключи API", Modifier.padding(top = 12.dp), fontWeight = FontWeight.Bold) }
         items(Provider.entries.filter { it != Provider.DEMO }) { p -> KeyCard(p) }
+        item { var about by remember { mutableStateOf(false) }
+            OutlinedButton({ about = true }, Modifier.fillMaxWidth().padding(top = 12.dp)) { Text("О приложении, конфиденциальность и лицензии") }
+            if (about) AboutScreen { about = false } }
         item { Card(Modifier.padding(top = 12.dp)) { Text("Промпт проверки фото зашит в приложение и не редактируется — это защита от «уговоров» ИИ. Фото снимается только камерой, галерея недоступна. Все запросы к ИИ идут в фоне через WorkManager и дождутся сети. Приложение никогда не включает выключенный телефон: пропущенные за время выключения звонки показываются списком.", Modifier.padding(12.dp), fontSize = 13.sp) } }
     }
 }

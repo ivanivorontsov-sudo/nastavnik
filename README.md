@@ -3,6 +3,10 @@
 APK: `dist/Nastavnik.apk` (Android 8.0+, подписан `release.keystore`, alias `nastavnik`).
 Сборка: `JAVA_HOME=... ANDROID_HOME=~/android-sdk ./gradlew testReleaseUnitTest assembleRelease`.
 
+> **Не психологическая и не медицинская помощь.** Приложение не заменяет консультацию специалиста. Если вам тяжело или есть угроза жизни — звоните **112** или **8-800-2000-122**.
+>
+> [Политика конфиденциальности](https://ivanivorontsov-sudo.github.io/supersmart-privacy/nastavnik.html) · [Сторонние компоненты](THIRD_PARTY_NOTICES.md)
+
 ## Методики
 GROW (8-шаговая коуч-сессия при постановке цели), SMART (метрика и срок), WOOP / ментальное контрастирование (желание → результат → препятствие → план),
 намерения «если — то», habit stacking (привязка к существующей привычке), правило малых шагов, серии (streaks), ежедневная вечерняя рефлексия,
